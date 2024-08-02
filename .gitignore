@@ -10,8 +10,6 @@
 /vendor/
 
 # Dependency directories
-*.mod
-*.sum
 
 # IDE and editor files
 .idea/
