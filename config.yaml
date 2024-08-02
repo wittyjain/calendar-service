@@ -1,0 +1,17 @@
+credentials:
+  access_key: "test"
+  secret_key: "test"
+region: "us-east-1"
+endpoint: "http://localstack:4566"
+queues:
+  calendar-entry: "http://localstack:4566/000000000000/calendar-entry"
+
+mysql:
+username: "user"
+password: "password"
+url: "mysql"  # Use service name from Docker Compose
+port: "3306"
+database: "calendar"
+charset: "utf8mb4"
+parseTime: "True"
+loc: "Local"
