@@ -66,3 +66,20 @@ Make sure to adjust the credentials and connection details according to your set
 ## Stopping and Removing Containers
 To stop and remove the containers, use:
 ```docker-compose down```
+
+## Get Active Calendar Entry
+```curl --location 'localhost:8080/calendar/active'```
+
+## Process Active Calendar Entries through SQS Queue
+
+```curl --location --request POST 'localhost:8080/process-calendar-entries'```
+
+## Create Active Calendar Entry
+
+```curl --location 'localhost:8080/calendar/active' \
+--header 'Content-Type: application/json' \
+--data '{
+    "StartDate": "2024-08-08T00:00:00Z",
+    "StopDate": "2024-08-10T00:00:00Z"
+}'```
+
